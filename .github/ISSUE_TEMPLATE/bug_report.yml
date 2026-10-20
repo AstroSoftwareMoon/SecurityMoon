@@ -1,0 +1,70 @@
+# Soporte: https://discord.gg/eBszxvAuhN
+# codigo fuente: https://github.com/AstroSoftwareMoon/SecurityMoon
+
+name: Informar de un error
+description: Reporta un fallo reproducible de SecurityMoon.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por informar. Antes de continuar:
+        - Revisa las incidencias existentes para evitar duplicados.
+        - **No incluyas tokens, datos privados ni vulnerabilidades de seguridad.** Para problemas de seguridad usa la pestaña Security del repositorio.
+  - type: input
+    id: version
+    attributes:
+      label: Versión de SecurityMoon
+      description: Aparece en /botinfo, /status o package.json.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: node
+    attributes:
+      label: Versión de Node.js
+      placeholder: "22.x"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Sistema operativo
+      placeholder: "Ubuntu 24.04 / Windows 11 / ..."
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción del problema
+      description: Explica qué ocurre y qué esperabas que ocurriera.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducirlo
+      placeholder: |
+        1. Ejecutar /securitymoon
+        2. Pulsar el botón Módulos
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Registros relevantes
+      description: Pega solo líneas de logs/security.json sin secretos, IDs privados ni datos personales.
+      render: shell
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Comprobaciones
+      options:
+        - label: He revisado las incidencias existentes.
+          required: true
+        - label: He eliminado tokens, secretos y datos privados del informe.
+          required: true
+        - label: Uso una versión soportada (1.x).
+          required: true

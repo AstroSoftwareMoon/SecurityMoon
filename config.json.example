@@ -1,0 +1,13 @@
+{
+  "token": "PON_AQUI_EL_TOKEN",
+  "clientId": "ID_DE_LA_APLICACION",
+  "defaultLanguage": "es",
+  "prefix": "/",
+  "logging": {
+    "level": "info"
+  },
+  "promotions": {
+    "enabled": false,
+    "intervalHours": 24
+  }
+}

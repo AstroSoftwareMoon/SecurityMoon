@@ -1,0 +1,48 @@
+{
+  "name": "securitymoon",
+  "version": "1.0.0",
+  "description": "Bot de seguridad gratuito y de código abierto para Discord, creado por AstroSoftwareMoon.",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "deploy": "node src/deploy-commands.js",
+    "test": "node --test tests/",
+    "test:watch": "node --test --watch tests/",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "check": "npm run lint && npm test"
+  },
+  "keywords": [
+    "discord",
+    "discord-bot",
+    "security",
+    "moderation",
+    "anti-raid",
+    "anti-spam",
+    "anti-nuke",
+    "open-source"
+  ],
+  "author": "AstroSoftwareMoon",
+  "license": "MIT",
+  "homepage": "https://github.com/AstroSoftwareMoon/SecurityMoon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AstroSoftwareMoon/SecurityMoon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AstroSoftwareMoon/SecurityMoon/issues"
+  },
+  "dependencies": {
+    "discord.js": "^14.27.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "globals": "^15.15.0"
+  }
+}

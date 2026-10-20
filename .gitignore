@@ -1,0 +1,31 @@
+# Credenciales y configuración privada
+config.json
+.env
+.env.*
+!.env.example
+
+# Datos persistentes y copias de seguridad
+data/
+logs/
+*.corrupt-*.json
+*.tmp
+
+# Dependencias
+node_modules/
+
+# Cobertura y resultados de pruebas
+coverage/
+.nyc_output/
+test-results/
+
+# Editores y sistema operativo
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Registros locales
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log

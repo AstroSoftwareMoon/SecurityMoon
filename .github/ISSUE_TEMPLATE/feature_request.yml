@@ -1,0 +1,54 @@
+# Soporte: https://discord.gg/eBszxvAuhN
+# codigo fuente: https://github.com/AstroSoftwareMoon/SecurityMoon
+
+name: Sugerir una mejora
+description: Propón una función o una mejora para SecurityMoon.
+title: "[Mejora]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        SecurityMoon es gratuito y de código abierto. No se aceptan funciones que dependan de pagos, Premium, panel web, bases de datos o servicios externos que reciban datos de los servidores.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema o necesidad
+      description: ¿Qué problema resuelve esta propuesta?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solución propuesta
+      description: Describe el comportamiento que te gustaría ver.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas
+      description: ¿Has probado otra solución o comando?
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      options:
+        - Moderación
+        - Seguridad automática
+        - Panel o asistente
+        - Almacenamiento JSON
+        - Documentación
+        - Comunidad
+        - Otro
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Comprobaciones
+      options:
+        - label: He revisado las incidencias y propuestas existentes.
+          required: true
+        - label: La propuesta no requiere pagos, Premium ni bases de datos.
+          required: true

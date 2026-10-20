@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Comunidad oficial de Discord
+    url: https://discord.gg/eBszxvAuhN
+    about: Preguntas, ayuda general y conversación sobre SecurityMoon.
+  - name: Repositorio del proyecto
+    url: https://github.com/AstroSoftwareMoon/SecurityMoon
+    about: Código fuente, documentación y versiones.
+  - name: Avisos de seguridad
+    url: https://github.com/AstroSoftwareMoon/SecurityMoon/security/advisories/new
+    about: Informa de una vulnerabilidad de forma privada. No abras una incidencia pública.
