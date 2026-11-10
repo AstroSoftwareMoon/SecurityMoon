@@ -16,7 +16,7 @@ export default {
         baseEmbed({
           title: `🌙 ${PROJECT.name}`,
           description:
-            'SecurityMoon es un bot de seguridad para Discord, gratuito y de código abierto. Protege servidores frente a raids, spam, phishing, enlaces maliciosos, abusos de permisos y acciones destructivas.\n\nToda la configuración se guarda en archivos JSON y se gestiona desde Discord. No hay dashboard web, bases de datos ni funciones de pago.',
+            'SecurityMoon es un bot de seguridad para Discord, gratuito y de código abierto. Protege servidores frente a raids, spam, phishing, enlaces maliciosos, abusos de permisos y acciones destructivas.\n\nToda la configuración se guarda en archivos JSON y se gestiona desde Discord. No hay dashboard web, bases de datos ni funciones de pago.\n\n👉 Usa `/help` para ver todos los comandos o `/setup` para empezar.',
           color: 0x7c6cf5,
           thumbnail: interaction.client.user.displayAvatarURL({ size: 256 }),
           fields: [

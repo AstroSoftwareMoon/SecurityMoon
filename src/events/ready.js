@@ -45,11 +45,12 @@ export async function execute(client) {
     ),
   );
 
+  const serverCount = client.guilds.cache.size;
   client.user.setPresence({
     status: 'online',
     activities: [
       {
-        name: `la seguridad de ${client.guilds.cache.size} servidor${client.guilds.cache.size === 1 ? '' : 'es'}`,
+        name: `/help · protegiendo ${serverCount} servidor${serverCount === 1 ? '' : 'es'}`,
         type: ActivityType.Watching,
       },
     ],

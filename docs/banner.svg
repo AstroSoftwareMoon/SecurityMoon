@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">SecurityMoon</title>
+  <desc id="desc">Bot de seguridad y moderación gratuito y de código abierto para Discord.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1f2b"/>
+      <stop offset="55%" stop-color="#2a2466"/>
+      <stop offset="100%" stop-color="#7c6cf5"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#f5f3ff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#f5f3ff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="crescent">
+      <rect width="1200" height="360" fill="#fff"/>
+      <circle cx="252" cy="142" r="84" fill="#000"/>
+    </mask>
+  </defs>
+
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <circle cx="230" cy="170" r="190" fill="url(#glow)"/>
+  <circle cx="200" cy="180" r="92" fill="#f5f3ff" mask="url(#crescent)"/>
+
+  <g font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <text x="420" y="150" font-size="72" font-weight="800" fill="#f5f3ff">SecurityMoon</text>
+    <text x="422" y="198" font-size="28" font-weight="500" fill="#c9c4ff">Seguridad y moderación gratuita para Discord</text>
+    <text x="422" y="236" font-size="20" fill="#9aa0b5">Código abierto · MIT · Sin premium · Sin base de datos</text>
+
+    <g font-size="18" font-weight="600" fill="#f5f3ff">
+      <rect x="422" y="262" width="128" height="40" rx="20" fill="#ffffff" fill-opacity="0.12"/>
+      <text x="486" y="288" text-anchor="middle">🚨 Anti-Raid</text>
+      <rect x="562" y="262" width="128" height="40" rx="20" fill="#ffffff" fill-opacity="0.12"/>
+      <text x="626" y="288" text-anchor="middle">💥 Anti-Nuke</text>
+      <rect x="702" y="262" width="176" height="40" rx="20" fill="#ffffff" fill-opacity="0.12"/>
+      <text x="790" y="288" text-anchor="middle">🎣 Anti-Phishing</text>
+      <rect x="890" y="262" width="128" height="40" rx="20" fill="#ffffff" fill-opacity="0.12"/>
+      <text x="954" y="288" text-anchor="middle">💬 Anti-Spam</text>
+    </g>
+  </g>
+</svg>

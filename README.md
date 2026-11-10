@@ -1,3 +1,15 @@
+<p align="center">
+  <img src="docs/banner.svg" alt="SecurityMoon: bot de seguridad y moderación gratuito para Discord" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/AstroSoftwareMoon/SecurityMoon/actions/workflows/ci.yml"><img src="https://github.com/AstroSoftwareMoon/SecurityMoon/actions/workflows/ci.yml/badge.svg" alt="Estado de la CI"></a>
+  <img src="https://img.shields.io/badge/licencia-MIT-7c6cf5" alt="Licencia MIT">
+  <img src="https://img.shields.io/badge/Node.js-%E2%89%A5%2020.11-339933?logo=node.js&logoColor=white" alt="Node.js 20.11 o superior">
+  <img src="https://img.shields.io/badge/discord.js-14-5865f2?logo=discord&logoColor=white" alt="discord.js 14">
+  <a href="https://discord.gg/eBszxvAuhN"><img src="https://img.shields.io/badge/comunidad-Discord-5865f2?logo=discord&logoColor=white" alt="Comunidad oficial en Discord"></a>
+</p>
+
 # 🌙 SecurityMoon
 
 **SecurityMoon** es un bot de seguridad y moderación para Discord, gratuito y de código abierto, creado por [AstroSoftwareMoon](https://github.com/AstroSoftwareMoon/).
@@ -8,6 +20,57 @@ No tiene versión Premium, donaciones, pagos, panel web ni base de datos. Toda l
 - **Organización:** <https://github.com/AstroSoftwareMoon/>
 - **Comunidad de Discord:** <https://discord.gg/eBszxvAuhN>
 - **Licencia:** MIT
+
+## ¿Por qué SecurityMoon?
+
+- ✅ **Gratis de verdad:** sin Premium, sin donaciones y sin pagos para desbloquear funciones.
+- 🛡️ **Protección automática:** anti-raid, anti-nuke, anti-phishing, anti-spam y protección de permisos en un solo bot.
+- 🧭 **Sin código para configurar:** `/setup` te guía en 10 pasos y `/securitymoon` gestiona cada módulo con botones.
+- 🔒 **Sin base de datos ni servicios externos:** los datos viven en archivos JSON dentro del propio servidor donde ejecutas el bot.
+- 🔍 **Código abierto y auditable:** cada heurística de detección está en el repositorio para que puedas revisarla.
+
+## Inicio rápido
+
+1. Clona el repositorio, instala dependencias y configura el token. Consulta [Instalación](#instalación).
+2. Invita al bot a tu servidor con los permisos recomendados.
+3. Ejecuta `/setup` y después `/securitycheck` para revisar la configuración.
+
+## Preguntas frecuentes
+
+<details>
+<summary><strong>¿Es gratis?</strong></summary>
+
+Sí. SecurityMoon se distribuye bajo licencia MIT. No existe una versión Premium, ni donaciones ni compras dentro del bot.
+
+</details>
+
+<details>
+<summary><strong>¿Dónde se ejecuta y qué necesito?</strong></summary>
+
+Se instala y ejecuta tú mismo con Node.js 20.11 o superior, en un equipo o servidor propio. Necesitas una aplicación de Discord con el bot y los intents indicados en [Requisitos](#requisitos).
+
+</details>
+
+<details>
+<summary><strong>¿Necesita base de datos?</strong></summary>
+
+No. La configuración, las advertencias, los incidentes y los registros se guardan en archivos JSON y NDJSON locales. Consulta [Datos y privacidad](#datos-y-privacidad).
+
+</details>
+
+<details>
+<summary><strong>¿Puede proteger varios servidores?</strong></summary>
+
+Sí. Cada servidor tiene su propia configuración y sus propios archivos, aislados de los demás.
+
+</details>
+
+<details>
+<summary><strong>¿Por qué Anti-Spam o Anti-Phishing no detectan nada?</strong></summary>
+
+Esos módulos leen el contenido de los mensajes. Activa **Message Content Intent** en el portal de desarrolladores de Discord. Consulta [Solución de problemas](#solución-de-problemas).
+
+</details>
 
 ---
 

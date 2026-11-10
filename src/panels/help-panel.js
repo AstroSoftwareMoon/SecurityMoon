@@ -2,7 +2,7 @@
 // codigo fuente: https://github.com/AstroSoftwareMoon/SecurityMoon
 
 import { ButtonStyle, StringSelectMenuBuilder } from 'discord.js';
-import { COMMAND_EMOJI, PROJECT } from '../constants.js';
+import { COLORS, COMMAND_EMOJI, PROJECT } from '../constants.js';
 import { baseEmbed, truncate } from '../utils/embeds.js';
 import {
   buildUsage,
@@ -42,8 +42,17 @@ function linksRow() {
   );
 }
 
+const START_HERE = Object.freeze({
+  name: '🚀 Empieza aquí',
+  value: [
+    '**1.** `/setup` — configura el servidor en 10 pasos.',
+    '**2.** `/securitycheck` — revisa permisos y configuración.',
+    '**3.** `/securitymoon` — ajusta cada módulo desde el panel.',
+  ].join('\n'),
+});
+
 function homePayload(client) {
-  const fields = Object.entries(HELP_CATEGORIES).map(([key, category]) => ({
+  const categoryFields = Object.entries(HELP_CATEGORIES).map(([key, category]) => ({
     name: `${category.emoji} ${category.label}`,
     value: `${category.description}\n**${categoryCommands(client, key).size}** comandos.`,
     inline: false,
@@ -53,9 +62,10 @@ function homePayload(client) {
       baseEmbed({
         title: '🌙 Ayuda de SecurityMoon',
         description:
-          'SecurityMoon es un bot de seguridad y moderación gratuito y de código abierto. Todos los comandos son slash y responden de forma efímera cuando corresponde.\n\n✅ Los comandos que modifican el servidor piden confirmación con botones antes de ejecutarse.',
-        color: 0x7c6cf5,
-        fields,
+          'Bot de seguridad y moderación gratuito y de código abierto. Todos los comandos son slash y responden de forma efímera cuando corresponde.\n\n✅ Los comandos que modifican el servidor piden confirmación con botones antes de ejecutarse.',
+        color: COLORS.brand,
+        thumbnail: client.user?.displayAvatarURL?.({ size: 256 }) ?? null,
+        fields: [START_HERE, ...categoryFields],
         footer: `${PROJECT.name} • ${PROJECT.creator} • ${client.commands.size} comandos`,
       }),
     ],

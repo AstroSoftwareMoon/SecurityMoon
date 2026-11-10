@@ -4,6 +4,23 @@ Todos los cambios relevantes de SecurityMoon se documentan en este archivo.
 
 El formato sigue [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/) y el proyecto usa [Versionado Semántico](https://semver.org/lang/es/).
 
+## [1.1.0] - 2026-11-10
+
+Mejoras visuales y de descubrimiento. No cambia la configuración existente ni los comandos.
+
+### Añadido
+
+- **Banner y badges** en el README: estado de la CI, licencia, versión de Node.js, discord.js y enlace a la comunidad.
+- **Secciones nuevas en el README:** «¿Por qué SecurityMoon?», «Inicio rápido» y preguntas frecuentes.
+- **Bloque «🚀 Empieza aquí»** en la portada de `/help`, con los tres primeros pasos recomendados.
+- **Palabras clave ampliadas** en `package.json` para facilitar la búsqueda del proyecto en npm y GitHub.
+
+### Cambiado
+
+- La portada de `/help` muestra la miniatura del bot y usa el color de marca común del proyecto.
+- El estado del bot en Discord indica `/help` y el número de servidores protegidos.
+- `/about` menciona `/help` y `/setup` para orientar a las personas nuevas.
+
 ## [1.0.0] - 2026-10-20
 
 Primera versión estable de SecurityMoon para Discord.

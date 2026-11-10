@@ -1,6 +1,6 @@
 {
   "name": "securitymoon",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Bot de seguridad gratuito y de código abierto para Discord, creado por AstroSoftwareMoon.",
   "type": "module",
   "main": "src/index.js",
@@ -20,12 +20,23 @@
   "keywords": [
     "discord",
     "discord-bot",
+    "discord-security",
+    "discord-moderation",
+    "discord-js",
     "security",
     "moderation",
+    "automod",
     "anti-raid",
-    "anti-spam",
     "anti-nuke",
-    "open-source"
+    "anti-spam",
+    "anti-phishing",
+    "anti-scam",
+    "permissions-audit",
+    "open-source",
+    "free",
+    "seguridad",
+    "moderacion",
+    "bot-discord"
   ],
   "author": "AstroSoftwareMoon",
   "license": "MIT",
